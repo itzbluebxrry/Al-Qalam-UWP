@@ -1,0 +1,36 @@
+﻿<ContentDialog muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
+    Background="Transparent"
+    CornerRadius="5"
+    x:Class="Al_Mathurat_UWP__renewed_.Views.FirstRunDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    x:Uid="FirstRunDialog"
+    d:DesignHeight="345"
+    d:DesignWidth="550"
+    mc:Ignorable="d">
+    <ContentDialog.TitleTemplate>
+        <DataTemplate x:DataType="x:String">
+            <StackPanel Orientation="Horizontal" CornerRadius="5">
+                <Image
+                    Width="40"
+                    Height="40"
+                    Source="ms-appx:///Assets/StoreLogo.png" />
+                <TextBlock
+                    Margin="{StaticResource SmallLeftMargin}"
+                    VerticalAlignment="Center"
+                    Text="Al-Qalam UWP" />
+            </StackPanel>
+        </DataTemplate>
+    </ContentDialog.TitleTemplate>
+    <ScrollViewer>
+        <StackPanel>
+            <TextBlock TextWrapping="WrapWholeWords" Text="Hey, folks! We've just released a renewed version of Al-Mathurat UWP! And we're happy to announce that this repolished version is now called Al-Qalam UWP!"/>
+            <TextBlock TextWrapping="WrapWholeWords" Text="In this release, we added some huge additions to the old Al-Mathurat UWP project. Be sure to check it out and leave a feedback in our mailbox!"/>
+            <TextBlock/>
+            <TextBlock TextWrapping="WrapWholeWords" Text="Stay tuned!"/>
+        </StackPanel>
+    </ScrollViewer>
+</ContentDialog>
